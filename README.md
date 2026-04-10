@@ -1,19 +1,26 @@
 # Simple-ToDo-List-Python
-A basic to-do list application built using Python and the tkinter library for creating a graphical user interface (GUI). This application allows users to add tasks, remove selected tasks, and clear the entire task list. Tasks are displayed in a user-friendly Listbox widget, providing a simple and intuitive way to manage your tasks.
 
-# Key Features:
-- Create, manage, and organize your tasks in a user-friendly GUI.
-- Add tasks with a simple text input and the "Add Task" button.
-- Remove selected tasks using the "Remove Task" button.
-- Clear the entire task list with the "Clear List" button.
-- Easy-to-use interface suitable for beginners and casual users.
+## Description
+A Python/Tkinter desktop app to manage daily tasks. Users can add, remove, and clear tasks through a simple GUI. Tasks are displayed in a Listbox widget.
 
-# Usage:
-1. Clone the repository or download the Python script to your local machine.
-2. Make sure you have Python and the tkinter library installed.
-3. Run the script (e.g., 'python todo_list.py') to launch the to-do list application.
-4. Add tasks, remove selected tasks, and manage your to-do list effortlessly.
+## Features
+- Add tasks via text input
+- Remove selected tasks
+- Clear entire task list
+- Simple and intuitive GUI
+- Lightweight — no external dependencies
 
-Feel free to customize and enhance the application according to your needs. It serves as a great introduction to GUI programming with Python using the tkinter library.
+## Usage
+1. Clone the repository
+2. Make sure Python 3 and tkinter are installed
+3. Run: `python Simple-ToDo-List-Python.py`
 
-Author: Ryan Huber
+## Project Structure
+- `Simple-ToDo-List-Python.py` — Main app logic and GUI
+- `README.md` — Project documentation
+
+## Future Improvements
+- Add task persistence (save to file)
+- Add due dates and priorities
+- Add dark mode
+- Add task categories

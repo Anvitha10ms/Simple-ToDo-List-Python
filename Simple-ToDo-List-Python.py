@@ -2,6 +2,11 @@ import tkinter as tk
 from tkinter import messagebox
 
 def add_task():
+    """Add a new task to the listbox.
+    
+    Reads input from the entry field and inserts
+    it into the listbox. Shows a warning if empty.
+    """
     task = entry.get()
     if task:
         listbox.insert(tk.END, task)
@@ -10,6 +15,11 @@ def add_task():
         messagebox.showwarning("Warning", "Please enter a task.")
 
 def remove_task():
+    """Remove the selected task from the listbox.
+    
+    Deletes the currently highlighted task.
+    Shows a warning if no task is selected.
+    """
     selected_task_index = listbox.curselection()
     if selected_task_index:
         listbox.delete(selected_task_index)
@@ -17,6 +27,10 @@ def remove_task():
         messagebox.showwarning("Warning", "Please select a task to remove.")
 
 def clear_list():
+    """Clear all tasks from the listbox.
+    
+    Removes every task from the display.
+    """
     listbox.delete(0, tk.END)
 
 # Create the main application window
@@ -32,10 +46,9 @@ listbox = tk.Listbox(root)
 
 # Place widgets in the layout
 entry.pack(pady=5)
-add_button.pack()
-remove_button.pack()
-clear_button.pack()
-listbox.pack(fill=tk.BOTH, expand=True, pady=5)
+add_button.pack(pady=5)
+remove_button.pack(pady=5)
+clear_button.pack(pady=5)
+listbox.pack(pady=5)
 
-# Start the main event loop
 root.mainloop()
